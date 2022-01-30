@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <title>Pattern</title>
+    <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/59f8148d9f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="home.css">
 
@@ -17,19 +17,29 @@
 
 <body>
 
-    <nav class="navbar bg-dark navbar-dark">
-        <div class="container"><a href="" class="navbar-brand"><i class="fab fa-angellist"></i> Connor Ibbotson</a></div>
+    <nav class="navbar fixed-top bg-dark navbar-dark">
+        <div class="container">
+            <a href="https://github.com/CRE2525" target="_blank" class="navbar-brand">
+                <i class="fab fa-github"></i> Github
+            </a>
+            <a href="#" class="navbar-brand">
+                <i class="fas fa-user-astronaut"></i> Connor Ibbotson
+            </a>
+            <a href="https://www.linkedin.com/in/connor-ibbotson-1838b4193/" target="_blank" class="navbar-brand">
+                <i class="fab fa-linkedin"></i> Linkedin
+            </a>
+        </div> 
+        <!-- <div class="container"><a href="" class="navbar-brand"><i class="fab fa-angellist"></i> Connor Ibbotson</a></div> -->
     </nav>
     
     <section class="jumbotron text-center" id="header">
-        <h1 class="display-3">PATTERN</h1>
-        <p class="lead">Iusto explicabo voluptas quia impedit. Omnis voluptatem non quos.</p>
+        <h1 class="display-1">Me (Connor).</h1>
     </section>
 
     <section id="gallery">
         <div class="container">
 
-            <!-- \\\\\ Person info \\\\\ -->
+            <!-- \\\\\ Person info + image \\\\\ -->
 
             <div class="row">
                 <div class="col-lg-6 mb-6">
@@ -37,59 +47,147 @@
                         <div class="card-body">
                             <h3 class="card-title">About Me</h3>
                             <p class="card-text">
-                                Hi, my name is Connor! I am a third year Computer Science student at the University of Toronto.
+                                Hi, my name is Connor. I am a third year
+                                Computer Science student at the University of
+                                Toronto. I'm currently on an 8 month Co-op at
+                                <a target='_blank' href="https://www.senseilabs.com/">Sensei Labs</a>
+                                as a Front End Software Engineer.
                             </p>
+                            <a href="https://drive.google.com/file/d/1z0eQlCJEuW2cLN4RSdwma8KOTOeYgOpp/view?usp=sharing"
+                               class="btn btn-lg btn-info"
+                               role="button"
+                               target="_blank">
+                               My Resume
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 mb-6">
                     <div class="card">
                         <div class="card-body">
-                            <h3 class="card-title">Second Thing??</h3>
-                            <img
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corrupti quam magnam!
-                                Veniam, dolorum facere?
-                                Commodi, ut. Et, itaque quam!
-                            </p>
+                            <img class="card-img-top wraith" src="testImage2.jpg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- \\\\\ Skills info \\\\\ -->
+            <!-- \\\\\ Arrow gif \\\\\ -->
+
+            <div class='row'>
+                <div class='arrow'>
+                    <img src="gif-bounce-arrow.gif" alt="">
+                </div>
+            </div>
+
+            <!-- \\\\\ Skills header info \\\\\ -->
 
             <div class="row">
                 <div class="col-lg-12 mb-12">
                     <div class="card">
                         <div class="card-body">
-                            <h3 class="card-title">Neato Pattern</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corrupti quam magnam!
-                                Veniam, dolorum facere?
-                                Commodi, ut. Et, itaque quam!
+                            <h3 class="card-title skills-header-text">Technologies I build stuff with</h3>
+                            <p class="card-text skills-header-text">
+                                Here are some of my go-to languages, frameworks, and software.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- \\\\\ Contact info \\\\\ -->
+            <!-- \\\\\ Skills info (row 1) \\\\\ -->
 
             <div class="row">
-                <div class="col-lg-12 mb-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Neato Pattern</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corrupti quam magnam!
-                                Veniam, dolorum facere?
-                                Commodi, ut. Et, itaque quam!
-                            </p>
+                <div class="col-lg-2 mb-2 col-sm-2">
+                    <div class='skill python-skill'>
+                        <div class='logo-container'>
+                            <img src="SkillLogos/python.png" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-lg-2 mb-2 col-sm-2">
+                    <div class='skill javascript-skill'>
+                        <div class='logo-container'>
+                            <img src="SkillLogos/javascript.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-2 col-sm-2">
+                    <div class='skill c-skill'>
+                        <div class='logo-container'>
+                            <img src="SkillLogos/C.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-2 col-sm-2">
+                    <div class='skill typescript-skill'>
+                        <div class='logo-container'>
+                            <img src="SkillLogos/ts.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-2 col-sm-2">
+                    <div class='skill java-skill'>
+                        <div class='logo-container'>
+                            <img src="SkillLogos/java.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-2 col-sm-2">
+                    <div class='skill node-skill'>
+                        <div class='logo-container'>
+                            <img src="SkillLogos/node.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- \\\\\ Skills info (row 2) \\\\\ -->
+
+            <div class="row">
+                <div class="col-lg-2 mb-2 col-sm-2">
+                    <div class='skill html-skill'>
+                        <div class='logo-container'>
+                            <img src="SkillLogos/html.png" alt="">
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-lg-2 mb-2 col-sm-2">
+                    <div class='skill css-skill'>
+                        <div class='logo-container'>
+                            <img src="SkillLogos/css.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-2 col-sm-2">
+                    <div class='skill jquery-skill'>
+                        <div class='logo-container'>
+                            <img src="SkillLogos/jquery.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-2 col-sm-2">
+                    <div class='skill bootstrap-skill'>
+                        <div class='logo-container'>
+                            <img src="SkillLogos/bootstrap.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-2 col-sm-2">
+                    <div class='skill npm-skill'>
+                        <div class='logo-container'>
+                            <img src="SkillLogos/npm.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-2 col-sm-2">
+                    <div class='skill git-skill'>
+                        <div class='logo-container'>
+                            <img src="SkillLogos/git.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
