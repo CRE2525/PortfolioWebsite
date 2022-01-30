@@ -1,0 +1,13 @@
+#header {
+    background-image: url(testimg.png);
+}
+
+.display-3 {
+    color: black;
+    font-weight: 700;
+}
+
+.row {
+    margin-top: 1rem;
+    font-size: 23px;
+}
