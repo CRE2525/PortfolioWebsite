@@ -1,16 +1,25 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
 #header {
     background-image: url(Images/river.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom;
+    background-attachment: scroll;
+    background-position: 0% 74%;
     background-size: cover;
+}
+
+#footer {
+    text-align: center;
+    margin-bottom: 1%;
 }
 
 .navbar {
     position: sticky;
 }
 
-.display-1 {
+.title {
     color: rgb(4, 48, 75);
     font-weight: 700;
 }
@@ -26,6 +35,7 @@
 }
 
 .card {
+    border: none;
     transition: 0.4s;
 }
 
@@ -33,16 +43,13 @@
     transform: scale(1.03);
 }
 
-.contact-info {
-    margin-top: 20px;
-}
-
 section {
     margin-bottom: 10%;
 }
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  
+.container img {
+    width: calc(100% - (20px * 2));
+    margin: 5px;
 }
 
 .arrow {
@@ -52,31 +59,33 @@ body {
     margin-bottom: 100px;
 }
 
-.card {
-    border: none;
-}
-  
-.container .image {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-}
-  
-.container img {
-    width: calc(100% - (20px * 2));
-    margin: 5px;
-}
-
-.skills-header-text {
+.header-text {
     text-align: center;
 }
 
-.skill{
+.div-center-image {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ||||||||||||||||||||||||||| */
+/* || Skills Section Styles || */
+/* ||||||||||||||||||||||||||| */
+
+
+
+.skill {
     width: 130px;
     height: 130px;
     border-radius: 10%;
     padding: 1%;
     transition: 0.4s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
 }
 
 .python-skill { background-color: rgba(202, 227, 255, 0.6); }
@@ -92,17 +101,19 @@ body {
 .npm-skill { background-color: rgba(255, 146, 146, 0.25);}
 .git-skill { background-color: rgba(255, 230, 202, 0.6); }
 
-
-.skill:hover {
-    transform: scale(1.1);
-}
-
 .logo-container {
-    /* height: 65px; */
     display: flex;
     justify-content: center;
     margin-top: 12px;
 }
+
+
+
+/* |||||||||||||||||||||||||||||||| */
+/* || Expierience Section Styles || */
+/* |||||||||||||||||||||||||||||||| */
+
+
 
 .expierience-header-text {
     text-align: center;
@@ -110,25 +121,31 @@ body {
 }
 
 .exp-card {
-    /* border: 1px solid darkslategray; */
     box-shadow: 4px 4px 7px 2px rgba(0, 0, 0, 0.6);
     justify-content: center;
 }
 
-.co-op-img {
+.exp-img {
     height: 130px;
     object-fit: cover;
     border-radius: 5%;
-    /* border: 1px solid darkslategray; */
 }
 
-.div-center-image {
-    display: flex;
-    justify-content: center;
-}
-
-.co-op-text { 
+.exp-text { 
     font-size: 15px;
+}
+
+
+
+/* |||||||||||||||||||||||||||| */
+/* || Project Section Styles || */
+/* |||||||||||||||||||||||||||| */
+
+
+
+.project-header-text {
+    text-align: center;
+    margin-top: 100px;
 }
 
 .project-card {
@@ -139,8 +156,3 @@ body {
 .red-card { border: 2px solid #DB4437; }
 .yellow-card { border: 2px solid #F4B400; }
 .green-card { border: 2px solid #0F9D58; }
-
-.footer {
-    text-align: center;
-    margin-bottom: 1%;
-}
