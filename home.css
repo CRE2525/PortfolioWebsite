@@ -154,7 +154,87 @@ section {
     border-radius: 10%;
 }
 
-.blue-card { border: 2px solid #4285F4; }
-.red-card { border: 2px solid #DB4437; }
-.yellow-card { border: 2px solid #F4B400; }
-.green-card { border: 2px solid #0F9D58; }
+.trails-background { background-image: url(Images/CardImgs/trails.png); }
+.news-background { background-image: url(Images/CardImgs/newspaper.png); }
+.pathfinder-background { background-image: url(Images/CardImgs/pathfinder.png); }
+.sudoku-background { background-image: url(Images/CardImgs/sudoku.jpg); }
+.spaceship-background { background-image: url(Images/CardImgs/spaceship.jpg); }
+.portfolio-background { background-image: url(Images/CardImgs/portfolio.png); }
+
+
+/* ======================= IDEA NUMBER 1 ========================== */
+
+.my-project-card {
+    border: 2px solid rgb(34, 34, 34);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5;
+}
+    
+.my-project-card:hover:after {
+    opacity: 0.8;
+}
+    
+.my-project-card-2:hover:after {
+    opacity: 0.8;
+}
+
+.project-text-body {
+    height: 370px;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.project-text-body:hover {
+    opacity: 1;
+}
+
+.project-title {
+    position: absolute;
+    font-weight: 700;
+    color: white;
+    font-size: 30px;
+    bottom: 320px;
+    left: 20px;
+}
+
+
+/* ======================= IDEA NUMBER 2 ========================== */
+
+
+.my-project-card-2 {
+    border: 1px solid rgb(34, 34, 34);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5;
+}
+  
+.my-project-card-2:hover:after {
+    opacity: 0.8;
+}
+
+.project-text-body-2 {
+    height: 370px;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.project-text-body-2:hover {
+    opacity: 1;
+}
+
+.project-title-2 {
+    position: absolute;
+    font-weight: 700;
+    color: white;
+    font-size: 30px;
+    bottom: 320px;
+    left: 20px;
+}
