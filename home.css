@@ -51,7 +51,7 @@ body {
 section {
     margin-bottom: 10%;
 }
-  
+
 .container img {
     width: calc(100% - (20px * 2));
     margin: 5px;
@@ -128,6 +128,7 @@ section {
 .exp-card {
     box-shadow: 4px 4px 7px 2px rgba(0, 0, 0, 0.6);
     justify-content: center;
+    height: 500px;
 }
 
 .exp-img {
@@ -136,7 +137,7 @@ section {
     border-radius: 5%;
 }
 
-.exp-text { 
+.exp-text {
     font-size: 15px;
 }
 
@@ -176,11 +177,11 @@ section {
     background-position: center;
     transition: 0.5;
 }
-    
+
 .my-project-card:hover:after {
     opacity: 0.8;
 }
-    
+
 .my-project-card-2:hover:after {
     opacity: 0.8;
 }
